@@ -105,12 +105,12 @@ if tuple(int(v) for v in setuptools_version.split(".")[:3]) >= (24, 2, 0):
 
 
 setup(
-    name="gym-retro",
+    name="stable-retro",
     long_description=README,
     long_description_content_type="text/markdown",
-    author="OpenAI",
-    author_email="csh@openai.com",
-    url="https://github.com/openai/retro",
+    author="Farama Foundation",
+    author_email="contact@farama.org",
+    url="https://github.com/Farama-Foundation/stable-retro",
     version=open(VERSION_PATH).read().strip(),
     license="MIT",
     install_requires=["gymnasium>=0.27.1", "pyglet>=1.3.2,==1.*"],

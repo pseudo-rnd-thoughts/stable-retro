@@ -1,29 +1,29 @@
 # Stable-Retro
 
-A fork of gym-retro ('lets you turn classic video games into Gym environments for reinforcement learning with additional games'). Since gym-retro is in maintenance now and doesn't accept new games, plateforms or bug fixes, you can instead submit PRs with new games or features here in stable-retro.
+A fork of [gym-retro](https://github.com/openai/retro) ('lets you turn classic video games into Gym environments for reinforcement learning with additional games'). Since gym-retro is in maintenance now and doesn't accept new games, platforms or bug fixes, you can instead submit PRs with new games or features here in stable-retro.
 
 Currently added games on top of gym-retro:
-*	Super Mario Bros 2 Japan (Lost Levels) - NES
-*	Hang On - SMS
-*	Punch Out - NES
-*	WWF Wrestlemania the Arcade Game - Genesis
-*	NHL 94 - Genesis
-*	NHL 94 (1 on 1 rom hack) - Genesis
-*	Super Hang On - Genesis
-*	Tetris - GameBoy
-*	Virtua Fighter 2 - Genesis
+* Super Mario Bros 2 Japan (Lost Levels) - NES
+* Hang On - SMS
+* Punch Out - NES
+* WWF Wrestlemania the Arcade Game - Genesis
+* NHL 94 - Genesis
+* NHL 94 (1 on 1 rom hack) - Genesis
+* Super Hang On - Genesis
+* Tetris - GameBoy
+* Virtua Fighter 2 - Genesis
 
 PvP games that support two models fighting each other:
-*	Samurai Showdown - Genesis
-*	WWF Wrestlemania the Arcade Game - Genesis
-*	Mortal Kombat II - Genesis
-*	NHL 94 - Genesis
+* Samurai Showdown - Genesis 
+* WWF Wrestlemania the Arcade Game - Genesis 
+* Mortal Kombat II - Genesis 
+* NHL 94 - Genesis
 
 As well as additional states on already integrated games.
 
 ## Bug Fixes
-*	Fixed UI flickering issue in OpenAI integration tool
-*	fix compile with c++ >=17
+* Fixed UI flickering issue in OpenAI integration tool
+* fix compile with c++ >=17
 
 ## Installation
 
