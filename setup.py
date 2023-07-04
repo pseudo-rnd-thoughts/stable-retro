@@ -6,7 +6,7 @@ from distutils.spawn import find_executable
 from setuptools import Extension, setup
 from setuptools.command.build_ext import build_ext
 
-with open(os.path.join(os.path.dirname(__file__), "VERSION")) as f:
+with open(os.path.join(os.path.dirname(__file__), "retro", "VERSION")) as f:
     VERSION = f.read().strip()
 with open(os.path.join(os.path.dirname(__file__), "README.md")) as f:
     README = f.read()
@@ -102,8 +102,6 @@ setup(
         "retro": [
             "cores/*.json",
             "cores/*_libretro*",
-            "VERSION.txt",
-            "VERSION",
             "README.md",
             "LICENSES.md",
         ],
