@@ -6,10 +6,10 @@ from distutils.spawn import find_executable
 from setuptools import Extension, setup
 from setuptools.command.build_ext import build_ext
 
-VERSION_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "VERSION")
-
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-README = open(os.path.join(SCRIPT_DIR, "README.md")).read()
+with open(os.path.join(os.path.dirname(__file__), "VERSION")) as f:
+    VERSION = f.read().strip()
+with open(os.path.join(os.path.dirname(__file__), "README.md")) as f:
+    README = f.read()
 
 
 class CMakeBuild(build_ext):
@@ -82,7 +82,7 @@ setup(
     author="Farama Foundation",
     author_email="contact@farama.org",
     url="https://github.com/farama-foundation/stable-retro",
-    version=open(VERSION_PATH).read().strip(),
+    version=VERSION,
     license="MIT",
     install_requires=["gymnasium>=0.27.1", "pyglet>=1.3.2,==1.*"],
     python_requires=">=3.6.0,<3.11",
